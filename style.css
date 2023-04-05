@@ -1,0 +1,555 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato', serif;
+}
+
+.burger{
+    width: 100%;
+    height: 58px;
+    background: #fff;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.05);
+}
+
+.burger__list{
+    display: flex;
+    width: 425px;
+    height: 58px;
+    margin: auto;
+}
+
+.burger__list li{
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: auto;
+    cursor: pointer;
+}
+
+.burger_active{
+    color: #ada074;
+}
+
+
+.header{
+    background: url('../с_урока/img/header/bg-header.png') 0 0 no-repeat;
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    margin-bottom: 188px;
+}
+
+.header__logo{
+    position: absolute;
+    display: flex;
+    margin: 166px auto 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.header__text{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: none;
+    color: #fff;
+    width: 756px;
+    text-align: center;
+    margin: 445px auto 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 49px;
+}
+
+.header__text:first-line{
+    width: 756px;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #fff;
+}
+
+.header__text:after{
+    position: absolute;
+    content: '';
+    width: 105px;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.header__button{
+    position: absolute;
+    width: 182px;
+    height: 47px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #8c93ac;
+    margin: 795px auto 0 auto;
+    left: 0;
+    right: 0;
+
+}
+
+.header__arrow{
+    position: absolute;
+    margin: 917px auto 0 auto;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+
+.about {
+    margin-bottom: 95px;
+}
+
+.about__body {
+    max-width: 823px;
+    margin: 0 auto;
+}
+
+.about__header {
+    margin-bottom: 65px;
+}
+
+.about__title {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin: 0 0 0 -25px;
+}
+
+.about__text {
+    max-width: 680px;
+    color: #868585;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25.89px;
+    margin: 0 auto;
+}
+
+.about__row {
+    display: flex;
+    font-size: 0;
+    margin: 0 -15px;
+}
+.about__column {
+    margin: 0 15px;
+}
+
+.item-about {
+}
+
+.item-about__icon {
+    margin: 0px auto 40px auto;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-about__title {
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3.52px;
+    margin-bottom: 35px;
+}
+
+.item-about__text {
+    text-align: center;
+    color: #868585;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.portfolio{
+    width: 100%;
+    height: 1671px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.portfolio__head {
+}
+
+.portfolio__text {
+    position: absolute;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    display: flex;
+    margin-top: 107px;
+    margin-bottom: 40px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.portfolio__text:after{
+    content: '';
+    position: absolute;
+    width: 81px;
+    height: 1px;
+    background-color: #000000;
+    bottom: 0;
+    margin: -40px auto;
+}
+
+.portfolio__list {
+    position: absolute;
+    width: 295px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #3c3c3c;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin: 224px auto 0 auto;
+}
+
+.portfolio__list li{
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    width: 295px;
+}
+
+.portfolio__ALL {
+}
+
+.portfolio__list_active {
+    font-weight: 400;
+    color: #ada074;
+}
+
+.portfolio__WEB {
+}
+
+.portfolio__APPS {
+}
+
+.portfolio__OTHER {
+}
+
+.portfolio__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1105px;
+    height: 1125px;
+    margin: 371px auto 0 auto;
+}
+
+.portfolio__block {
+    max-width: 1105px;
+    display: flex;
+    margin: auto;
+}
+
+.portfolio__block1{
+    background-color: #eaeaea;
+    margin-right: 27px;
+    width: 538px;
+    height: 365px;
+    margin-bottom: 16px;
+}
+
+.portfolio__block2{
+    background-color: #eaeaea;
+    width: 538px;
+    height: 365px;
+    margin-bottom: 16px;
+}
+
+.portfolio__footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1562px auto 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__button {
+    width: 182px;
+    height: 47px;
+    border: 1px solid #a0a0a0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #000000;
+    background: transparent;
+}
+
+.partners {
+    width: 100%;
+    height: 390px;
+    background: url('../с_урока/img/partners/bg-header.png');
+    position: relative;
+}
+.partners__text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 30.4px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    opacity: 0.7;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.partners__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 220px auto 0 auto;
+    justify-content: center;
+    max-width: 585px;
+}
+
+.partners__list li{
+    margin: 0 auto;
+}
+
+.contact {
+    height: 823px;
+    max-width: 715px;
+    position: relative;
+    margin: auto;
+}
+
+.contact__header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 183px auto 0 auto;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.contact__header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 81px;
+    height: 1px;
+    background-color: #000000;
+    margin: -46px auto;
+}
+
+.contact__form {
+    position: absolute;
+    width: 381px;
+    height: 293px;
+    margin-top: 376px;
+}
+
+.contact__forms {
+}
+
+.contact__form-name-email{
+    display: flex;
+    margin: auto;
+}
+
+.contact__form-name{
+    width: 161px;
+}
+
+.form__name-text {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.form__name {
+    width: 161px;
+    height: 35px;
+    background-color: #f8f7f7;
+    border-top: 1px solid #000;
+}
+
+.contact__name-email{
+    width: 161px;
+    margin-left: 60px;
+}
+
+.form__email-text {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.form__email {
+    width: 161px;
+    height: 35px;
+    background-color: #f8f7f7;
+    border-top: 1px solid #000;
+}
+
+.contact__form-message{
+    width: 383px;
+}
+
+.form__message-text {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.form__messege {
+    width: 383px;
+    height: 118px;
+    background-color: #f8f7f7;
+    border-top: 1px solid #000;
+}
+
+.form__submit {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 42px 0 0 345px;
+}
+
+.contact__contacts {
+    position: absolute;
+    width: 250px;
+    height: 195px;
+    margin: 375px 0 0 455px;
+}
+
+.contacts__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #6c6c6c;
+    margin-bottom: 39px;
+}
+
+.contacts__name {
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.contacts__message {
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.contacts__facebook-icon{
+    width: 29px;
+    height: 29px;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 50%;
+    border: 2px solid #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__in-item{
+    width: 29px;
+    height: 29px;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 50%;
+    border: 2px solid #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.contacts__facebook {
+}
+
+.contacts__in {
+}
+.contacts__email {
+    display: flex;
+}
+
+.contacts__email-email {
+}
+
+.contacts__email-text {
+    font-weight: 700;
+}
