@@ -52,7 +52,7 @@ body{
 
 
 .header{
-    background: url(/с_урока/img/header/bg-header.png) 0 0 no-repeat;
+    background: url(./img/header/bg-header.png) 0 0 no-repeat;
     width: 100%;
     height: 1080px;
     position: relative;
@@ -347,7 +347,7 @@ body{
 .partners {
     width: 100%;
     height: 390px;
-    background: url('../с_урока/img/partners/bg-header.png');
+    background: url('./img/partners/bg-header.png');
     position: relative;
 }
 .partners__text {
@@ -552,4 +552,52 @@ body{
 
 .contacts__email-text {
     font-weight: 700;
+}
+
+.footer {
+    width: 100%;
+    height: 274px;
+    position: relative;
+    background: #3c3c3c;
+}
+
+.footer__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 48px auto 0 auto;
+}
+
+.footer__list {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: 167px auto 0 auto;
+    justify-content: center;
+    width: 260px;
+}
+
+.footer__list li{
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #a4a4a4;
+    cursor: pointer;
+}
+
+.footer__year {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 212px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #6c6c6c;
 }
